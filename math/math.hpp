@@ -205,13 +205,13 @@ namespace nMath
             return a_[I];
         }
 
-        T const& operator [] ( IT idx ) const
+        T operator [] ( IT idx ) const
         {
             return const_cast<VectorType*>(this)->operator [](idx);
         }
 
         template<IT I>
-        T const& at_c() const
+        T at_c() const
         {
             static_assert( I < N, "index too big" );
             return a_[I];

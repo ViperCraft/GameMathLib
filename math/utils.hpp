@@ -188,7 +188,7 @@ namespace nMath
     }
 
     template<typename T, typename U>
-    bool is_equal( T const& lhs, T const& rhs, const U& accuracy )
+    bool is_equal( T const& lhs, T const& rhs, U const accuracy )
     {
         for
         (
