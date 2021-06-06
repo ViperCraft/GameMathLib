@@ -1,10 +1,23 @@
 # GameMathLib
-C++ Vector Math Library for games
+C++ Vector Math Library for games, useful for physics, AI. Can be used in mobile phone games, its simple to use and fast!
 
-# Examples
+* Vectors at any static sizes, 2D, 3D, 4D, 9D
+* Matrix4 useful for 3D worlds, OpenGL matrix layout
+* Quaternions
+* Fuzzy logic stuff
+* Mini and fast NNet
 
-# Basic Vector usage
+## Examples
 
+How to build & run tests:
+```shell
+cmake . && make
+./test/unit/unittest
+```
+
+## Basic Vector usage
+
+```c++
 Vector4f vec4; // vector dimeonsion 4 of floats
 Vector3d vec3; // vector dimension 3 of doubles
 
@@ -37,3 +50,4 @@ feature_vector.normalize();
 
 assert( is_near(feature_vector.magnitude(), 1.f) );
 
+```
