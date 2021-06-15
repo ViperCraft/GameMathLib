@@ -810,7 +810,7 @@ namespace nMath
         a02, a12, a22, a32,
         a03, a13, a23, a33
     };
-
+    // Column-Major Matrix 4x4
     template<typename T>
     class Matrix4
     {
@@ -1724,7 +1724,7 @@ namespace nMath
         { return q_[aW]; }
 
 
-        bool is_equal( QuatT const& other, T accuracy ) const
+        bool is_equal( QuatT const& other, T accuracy = cSmallEPSILON<T>() ) const
         {
             return nInternal::cmp_op<T, N>::Do
             (
